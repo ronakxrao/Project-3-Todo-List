@@ -19,6 +19,11 @@ const todosApp ={
             done: false
         }
         }
+      },
+      methods: {
+        addTodo: function() {
+            this.todos.push(this.newTodo);
+        }
       }
 };
 
