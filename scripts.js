@@ -22,8 +22,14 @@ const todosApp ={
       },
       methods: {
         addTodo: function() {
-            this.todos.push(this.newTodo);
-            this.newTodo ={};
+            if(this.newTodo.text) {
+                this.todos.push(this.newTodo);
+                this.newTodo ={     
+                     done: false
+                };
+            } else {
+                alert("To-do text is required");
+            }
         }
       }
 };
