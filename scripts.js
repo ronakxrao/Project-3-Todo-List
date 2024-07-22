@@ -23,6 +23,7 @@ const todosApp ={
       methods: {
         addTodo: function() {
             this.todos.push(this.newTodo);
+            this.newTodo ={};
         }
       }
 };
