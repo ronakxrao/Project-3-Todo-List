@@ -22,10 +22,10 @@ const todosApp = {
         }
     },
     created() {
-        this.todos = localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : this.todos;       
+        this.todos = localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : this.todos;
     },
     updated() {
-        localStorage.setItem("todos", JSON.stringify(this.todos));        
+        localStorage.setItem("todos", JSON.stringify(this.todos));
     }
 }
 
